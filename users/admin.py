@@ -38,6 +38,7 @@ class CustomUserAdmin(UserAdmin):
                     "birthdate",
                     "language",
                     "currency",
+                    "login_method",
                 )
             },
         ),
@@ -65,6 +66,9 @@ class CustomUserAdmin(UserAdmin):
         "email",
         "is_staff",
         "is_active",
+        "is_superuser",
+        "email_verified",
+        "email_secret",
     )
     list_filter = (
         "email",
